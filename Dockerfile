@@ -43,6 +43,8 @@ RUN jupyter kernelspec install --user /home/kdb/jupyterq/kernelspec\
 
 EXPOSE 8888
 
+SHELL ["/bin/bash", "-c"]
+
 CMD jupyter lab \
     --ip=0.0.0.0 \
     --no-browser \

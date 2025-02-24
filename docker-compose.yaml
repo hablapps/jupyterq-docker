@@ -1,8 +1,7 @@
 services:
   jupyterq:
     image: jupyterq
-    build: 
-      context: docker
+    build: .
     container_name: jupyterq
     ports:
       - 8888:8888
