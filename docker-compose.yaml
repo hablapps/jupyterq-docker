@@ -1,0 +1,11 @@
+services:
+  jupyterq:
+    image: jupyterq
+    build: 
+      context: docker
+    container_name: jupyterq
+    ports:
+      - 8888:8888
+    volumes:
+      - ./kc.lic:/home/kx/kc.lic
+      - ./notebooks:/home/kdb/notebooks
