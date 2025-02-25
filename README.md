@@ -1,21 +1,18 @@
 # Dockerized JupyterQ
 
-This repository provides a Dockerized Jupyter environment for kdb+/q,
-using [JupyterQ](https://github.com/KxSystems/jupyterq), for interactive development
-with Jupyter notebooks.
-
-## Configure and run
+This repository provides a dockerized Jupyter environment for kdb+/q
+using [JupyterQ](https://github.com/KxSystems/jupyterq).
 
 This Docker image serves as a replacement for the unmaintained official
 [JupyterQ](https://hub.docker.com/r/kxsys/jupyterq) image (updated 3 years ago).
-This image follows the manual installation steps for
-[embedPy](https://github.com/KxSystems/embedPy) and JupyterQ, independently of
-the original Kx Dockerfile.
+Its definition follows the manual installation steps for JupyterQ and it's not
+inspired in the original JupyterQ Dockerfile.
 
 This repository does not include any software distributed by *Kx Systems*—it
 only provides a Dockerfile to build the environment using the required files.
 You must obtain the q distribution and license from *Kx Systems* before building
-the container.
+the container. You shouldn't distribute the built image, as it contains
+proprietary software that requires a license from Kx Systems. 
 
 ## Setup and Usage
 
