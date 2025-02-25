@@ -9,8 +9,7 @@ RUN pip install --upgrade pip
 
 WORKDIR ${QHOME}
 
-COPY assets/l64.zip .
-COPY assets/kc.lic .
+COPY assets/* .
 RUN unzip l64.zip && rm l64.zip && chmod +x l64/q
 
 WORKDIR /home/kdb
