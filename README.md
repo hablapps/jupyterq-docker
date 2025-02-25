@@ -34,6 +34,10 @@ Now you can build and run the container with the Jupyter environment.
 ```bash
 docker build -t jupyterq
 docker run -v ./notebooks:/home/kdb/notebooks -p 8888:8888 --rm jupyterq
+
+# you can also use docker compose
+docker compose build
+docker compose up
 ```
 
 - The `notebooks` directory on the host machine is mounted as a volume at the 
