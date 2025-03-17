@@ -3,6 +3,7 @@ services:
     image: jupyterq
     build: .
     container_name: jupyterq
+    restart: unless-stopped
     ports:
       - 8888:8888
     volumes:
